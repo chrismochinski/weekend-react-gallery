@@ -7,9 +7,11 @@ import './App.css';
 function App() {
 
   let [galleryArray, setGalleryArray] = useState([]); //does this work with images???
+  let [isPhotoClicked, setIsPhotoClicked] = useState(false); 
+  //sets photo to clicked - this makes it the img vs the description
 
-  useEffect(() => { //on load
-    getGallery() //.....get gallery
+  useEffect(() => {
+    getGallery()
   }, []);
 
 
@@ -37,9 +39,8 @@ function App() {
     }).catch(function(error) {
       console.log('error in CLIENT-side PUT function:', error)
     })
-    
-
   } // end PUT function
+
 
 
   // do the get from router
@@ -59,11 +60,21 @@ function App() {
 
       <GalleryItem />
 
+    
+  
+
 
       <ul>
+        
+      <li>
+      {isPhotoClicked ? (console.log(isPhotoClicked)) : (console.log(isPhotoClicked))};
+        </li>
+
+
         {galleryArray.map(gallery =>
         (<li
-          key={gallery.id}><img src={gallery.path} width="200px" /> 
+          key={gallery.id}>
+            <img onClick={() => setIsPhotoClicked(!isPhotoClicked)} src={gallery.path} width="200px" />
           <br />
           <button onClick={() => addLike(gallery.id)}>Like</button>
            Likes: {gallery.likes} <br /><br />
