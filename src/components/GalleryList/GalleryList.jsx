@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import React from 'react';
 import axios from 'axios';
+import GalleryItem from '../GalleryItem/GalleryItem.jsx'
 
 function GalleryList({ galleryArray, getGallery }) {
 
@@ -26,6 +27,7 @@ function GalleryList({ galleryArray, getGallery }) {
     return (
 
         <ul>
+            <GalleryItem />
 
             {galleryArray.map(gallery => (<li key={gallery.id}>
 
@@ -43,7 +45,6 @@ function GalleryList({ galleryArray, getGallery }) {
             </li>)
             )}
         </ul>
-
 
     )
 
