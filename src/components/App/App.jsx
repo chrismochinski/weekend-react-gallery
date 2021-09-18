@@ -23,7 +23,24 @@ function App() {
     }).catch((error) => {
       console.log(error);
     })
-  }
+  } // end GET function
+
+  //PUT - to add likes
+  const addLike = (galleryID) => {
+    console.log('adding Like to photo with galleryID:', galleryID)
+    axios({
+      method: 'PUT',
+      url: 'gallery/like/' + galleryID
+    }).then(function(response) {
+      console.log('Adding like to photo with ID:', galleryID)
+      getGallery();
+    }).catch(function(error) {
+      console.log('error in CLIENT-side PUT function:', error)
+    })
+    
+
+  } // end PUT function
+
 
   // do the get from router
   //pass in array into the GalleryList (Props)
@@ -46,7 +63,10 @@ function App() {
       <ul>
         {galleryArray.map(gallery =>
         (<li
-          key={gallery.id}><img src={gallery.path} width="250px"/> - {gallery.likes}
+          key={gallery.id}><img src={gallery.path} width="200px" /> 
+          <br />
+          <button onClick={() => addLike(gallery.id)}>Like</button>
+           Likes: {gallery.likes} <br /><br />
         </li>)
         )}
       </ul>
