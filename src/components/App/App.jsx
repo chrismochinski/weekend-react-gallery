@@ -7,7 +7,7 @@ import './App.css';
 function App() {
 
   let [galleryArray, setGalleryArray] = useState([]); //does this work with images???
-  let [isPhotoClicked, setIsPhotoClicked] = useState(false); 
+  let [isPhotoClicked, setIsPhotoClicked] = useState(false);
   //sets photo to clicked - this makes it the img vs the description
 
   useEffect(() => {
@@ -33,10 +33,10 @@ function App() {
     axios({
       method: 'PUT',
       url: 'gallery/like/' + galleryID
-    }).then(function(response) {
+    }).then(function (response) {
       console.log('Adding like to photo with ID:', galleryID)
       getGallery();
-    }).catch(function(error) {
+    }).catch(function (error) {
       console.log('error in CLIENT-side PUT function:', error)
     })
   } // end PUT function
@@ -60,24 +60,25 @@ function App() {
 
       <GalleryItem />
 
-    
-  
+
+
 
 
       <ul>
-        
-      <li>
-      {isPhotoClicked ? (console.log(isPhotoClicked)) : (console.log(isPhotoClicked))};
-        </li>
-
-
         {galleryArray.map(gallery =>
         (<li
           key={gallery.id}>
-            <img onClick={() => setIsPhotoClicked(!isPhotoClicked)} src={gallery.path} width="200px" />
+          {
+            isPhotoClicked
+              ?
+              <button onClick={() => setIsPhotoClicked(!isPhotoClicked)}>{gallery.description}</button>
+              :
+              <img onClick={() => setIsPhotoClicked(!isPhotoClicked)} src={gallery.path} width="200px" />
+
+          }
           <br />
           <button onClick={() => addLike(gallery.id)}>Like</button>
-           Likes: {gallery.likes} <br /><br />
+          Likes: {gallery.likes} <br /><br />
         </li>)
         )}
       </ul>
