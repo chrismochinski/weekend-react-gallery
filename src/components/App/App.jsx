@@ -18,7 +18,7 @@ function App() {
 
 
   // GET GALLERY request 
-  // galleryItems from gallery.router.js = response over here
+  // galleryItems from gallery.router.js is the response
   const getGallery = () => {
     axios.get('/gallery').then((response) => {
       console.log('response from gallery.router.js', response.data);
@@ -48,7 +48,6 @@ function App() {
         galleryArray={galleryArray}
         getGallery={getGallery}
       />
-
 
     </div>
   );

@@ -1,0 +1,23 @@
+li {
+    list-style-type: none;
+  }
+
+  .picture {
+    float: left;
+    border-radius: 5px;
+
+    text-align: center;
+    width: 220px;
+    height: 250px;
+    align-content: center;
+    border-style: solid;
+    margin: 5px;
+}
+
+img {
+    align: center;
+}
+
+.description {
+    font-size: 20px;
+}

@@ -1,13 +1,31 @@
+import { useState } from 'react';
+import './GalleryItem.css';
 
-import React from 'react';
+function GalleryItem({photo, addLike}) {
 
-function GalleryItem(addLike, galleryArray, isPhotoClicked, setIsPhotoClicked) {
+    let [isPhotoClicked, setIsPhotoClicked] = useState(false);
 
     return(
+        
+        
+        <li key={photo.id} className="picture">
 
-        <h2>FROM GALLERYITEM!</h2>
+        {
+            isPhotoClicked
+                ?
+                <div className="description"><h3 onClick={() => setIsPhotoClicked(!isPhotoClicked)}>{photo.description}</h3></div>
+                :
+                <img onClick={() => setIsPhotoClicked(!isPhotoClicked)} src={photo.path} width="200px" />
+        }
 
-    )
+        
+        <button onClick={() => addLike(photo.id)}>Like</button>
+        <div className="likesNumber">
+            {photo.likes} 
+        </div>
+    </li>)
+
+    
 }
 
 export default GalleryItem;

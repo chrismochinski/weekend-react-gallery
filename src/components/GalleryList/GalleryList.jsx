@@ -2,6 +2,8 @@ import { useState } from 'react';
 import React from 'react';
 import axios from 'axios';
 import GalleryItem from '../GalleryItem/GalleryItem.jsx'
+import './GalleryList.css';
+
 
 function GalleryList({ galleryArray, getGallery }) {
 
@@ -27,23 +29,16 @@ function GalleryList({ galleryArray, getGallery }) {
     return (
 
         <ul>
-            <GalleryItem />
 
-            {galleryArray.map(gallery => (<li key={gallery.id}>
-
-                {
-                    isPhotoClicked
-                        ?
-                        <h3 onClick={() => setIsPhotoClicked(!isPhotoClicked)}>{gallery.description}</h3>
-                        :
-                        <img onClick={() => setIsPhotoClicked(!isPhotoClicked)} src={gallery.path} width="200px" />
-                }
-
-                <br />
-                <button onClick={() => addLike(gallery.id)}>Like</button>
-                Likes: {gallery.likes} <br /><br />
-            </li>)
-            )}
+            {galleryArray.map(photo => (
+                <GalleryItem
+                    key={photo.id}
+                    photo={photo}
+                    isPhotoClicked={isPhotoClicked}
+                    setIsPhotoClicked={setIsPhotoClicked}
+                    addLike={addLike}
+                />
+            ))}
         </ul>
 
     )
