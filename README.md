@@ -23,3 +23,6 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [] app.jsx > axios get
     [] > render on DOM
 [] Show gallery on DOM ()
+
+[] delete dopey comments
+[] awesome ReadMe page
