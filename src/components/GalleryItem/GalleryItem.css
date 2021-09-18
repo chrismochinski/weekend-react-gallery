@@ -1,23 +1,61 @@
 li {
     list-style-type: none;
-  }
-
-  .picture {
-    float: left;
-    border-radius: 5px;
-
-    text-align: center;
-    width: 220px;
-    height: 250px;
-    align-content: center;
-    border-style: solid;
     margin: 5px;
 }
 
-img {
-    align: center;
+  .picture {
+
+    float: left;
+    border-radius: 11px;
+    border: 3px solid black;
+    text-align: center;
+    width: 220px;
+    height: 256px;
+    align-content: center;
+    border-style: solid;
+   
+}
+
+.image {
+    margin-top: 10px;
+    
 }
 
 .description {
-    font-size: 20px;
+
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 200px;
+    height: 204px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: black;
+    align-content: center;
+    font-size: 25px;
+    font-family: 'Carattere', cursive;    
+    color: white;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+#theText {
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+
+}
+
+.likeSection {
+    margin-top: 2px;
+    margin-left: 7px;
+    display: flex;
+    align-items:center;
+    
+}
+
+#likesNumber {
+    font-size: 19px;
+}
+

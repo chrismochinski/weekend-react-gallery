@@ -14,15 +14,20 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [x] crop photos to size (100px x 100px?)
 [x] add photos to public/images folder
 [x] add photos and their routing in server/modules/gallery.data.js
-[] GET ROUTE via axios (won't work at first
-[] GalleryList folder and jsx file
+[x] GET ROUTE via axios (won't work at first
+[x] GalleryList folder and jsx file
 
 
-    [] gallery.data.js > node stuff 
-    [] gallery.router.js > check get 
-    [] app.jsx > axios get
-    [] > render on DOM
-[] Show gallery on DOM ()
+    [x] gallery.data.js > node stuff 
+    [x] gallery.router.js > check get 
+    [x] app.jsx > axios get
+    [x] > render on DOM
+[x] Show gallery on DOM ()
 
+
+[] paper pattern on polaroids
+[] split description and location into two different properties and render differently (location smaller)
+[] better HEADER
+[] better LOVE FONT
 [] delete dopey comments
 [] awesome ReadMe page
