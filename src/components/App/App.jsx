@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import GalleryItem from '../GalleryItem/GalleryItem.jsx'
+import GalleryList from '../GalleryList/GalleryList.jsx'
+import Header from '../Header/Header.jsx'
 import axios from 'axios';
 import './App.css';
 
@@ -7,12 +8,13 @@ import './App.css';
 function App() {
 
   let [galleryArray, setGalleryArray] = useState([]); //does this work with images???
-  let [isPhotoClicked, setIsPhotoClicked] = useState(false);
+
   //sets photo to clicked - this makes it the img vs the description
 
   useEffect(() => {
     getGallery()
   }, []);
+
 
 
   // GET GALLERY request 
@@ -25,63 +27,27 @@ function App() {
     }).catch((error) => {
       console.log(error);
     })
-  } // end GET function
-
-  //PUT - to add likes
-  const addLike = (galleryID) => {
-    console.log('adding Like to photo with galleryID:', galleryID)
-    axios({
-      method: 'PUT',
-      url: 'gallery/like/' + galleryID
-    }).then(function (response) {
-      console.log('Adding like to photo with ID:', galleryID)
-      getGallery();
-    }).catch(function (error) {
-      console.log('error in CLIENT-side PUT function:', error)
-    })
-  } // end PUT function
+  } // end GET function (to populate photos on dom - working)
 
 
 
-  // do the get from router
   //pass in array into the GalleryList (Props)
   // once in GalleryList, loop through array and pass each individual array, via props into GalleryItem
 
   //setup your image TAG - source = item 
 
 
+
   return (
 
     <div className="App">
-      <header className="App-header">
-        <h1 className="App-title">My European Tour Gallery</h1>
-      </header>
-      <p>React Photo Gallery</p>
 
-      <GalleryItem />
+      <Header />
 
-
-
-
-
-      <ul>
-        {galleryArray.map(gallery =>
-        (<li
-          key={gallery.id}>
-          {
-            isPhotoClicked
-              ?
-              <button onClick={() => setIsPhotoClicked(!isPhotoClicked)}>{gallery.description}</button>
-              :
-              <img onClick={() => setIsPhotoClicked(!isPhotoClicked)} src={gallery.path} width="200px" />
-
-          }
-          <br />
-          <button onClick={() => addLike(gallery.id)}>Like</button>
-          Likes: {gallery.likes} <br /><br />
-        </li>)
-        )}
-      </ul>
+      <GalleryList
+        galleryArray={galleryArray}
+        getGallery={getGallery}
+      />
 
 
     </div>

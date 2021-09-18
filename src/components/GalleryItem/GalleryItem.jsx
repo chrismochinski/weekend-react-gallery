@@ -1,10 +1,11 @@
 
 import React from 'react';
 
-function GalleryItem() {
+function GalleryItem(addLike, galleryArray, isPhotoClicked, setIsPhotoClicked) {
+
     return(
-        <h1>My 2020 European Tour Gallery</h1>
-        // That line is throwaway - just an experiment 
+
+        <h2>FROM GALLERYITEM!</h2>
 
     )
 }
