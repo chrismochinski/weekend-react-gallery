@@ -23,7 +23,7 @@ li {
 }
 
 .image:hover {
-    opacity: 60%;
+    opacity: 90%;
     transition-duration: .35s;
 }
 

@@ -1,33 +1,65 @@
-# Project Name
+# <b>Weekend React Gallery  🖼️ <p>
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+### <b><span style="color:#F0ED86">This application is a simple - and admittedly self-centered - gallery of photos from my 2019-2020 European tour.</b>
+<br />
 
-## Description
+---
 
-Your project description goes here. What problem did you solve? How did you solve it?
+#### <span style="color: #9ED2F0">_Duration: Two-Day Sprint_</span><br />
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+This simple app allows a user to click on a polaroid and see a brief description and location associated with the photo. The user can also "like" the photo via the button and see the total number of likes the photo has received.<br />
 
-## CHECKLIST
+---
 
-[x] select photos
-[x] crop photos to size (100px x 100px?)
-[x] add photos to public/images folder
-[x] add photos and their routing in server/modules/gallery.data.js
-[x] GET ROUTE via axios (won't work at first
-[x] GalleryList folder and jsx file
+![gif during use](./README-visuals/galleryInUse.gif)
+---
+
+<br />
+
+### Prerequisites
+---
+- Internet browser application (e.g. Chrome, Safari)
+<br /> <br />
+
+## Installation
+---
+- No particular installation steps are required.
+<br />
+<br />
+## Usage
+---
+
+- At any time, click on a photo to see the description and location
+- At any time, click the <img src="./README-visuals/loveButton.png" alt="mo" style="width:20px;"> icon to add a "like" to the "like count"
+<br /><br />
+
+## Built with
+---
+### [Visual Studio Code](https://code.visualstudio.com/), [Pixelmator Pro](https://www.pixelmator.com/pro/)
+<br />
+
+## License
+---
+N/A
+
+<br/>
+
+## Acknowledgement
+---
+Thanks to my instructors and everyone at [Prime Digital Academy](www.primeacademy.io) for giving me the tools to do some really rad stuff. 
+<br /><br />
+
+## Support
+---
+If you have questions or issues, please do not hesitate to email me at: [cmochinski@gmail.com](mailto:cmochinski@gmail.com). I'd love to hear from you!
+
+---
+<br />
+
+<img align="left" src="./README-visuals/readme-signature-pic.png" alt="mo" style="width:115px;">
+<br />
 
 
-    [x] gallery.data.js > node stuff 
-    [x] gallery.router.js > check get 
-    [x] app.jsx > axios get
-    [x] > render on DOM
-[x] Show gallery on DOM ()
-
-[x] polaroid font - make more handwriting-like
-[x] get that dang background pattern!
-[] split description and location into two different properties and render differently (location smaller)
-[x] better HEADER
-[x] better LOVE FONT
-[] delete dopey comments
-[] awesome ReadMe page
+##### _[My Twitter (@HolyMosesMusic)](https://twitter.com/holymosesmusic)_ 
+##### _[My GitHub](https://github.com/chrismochinski)_ 
+##### _[My LinkedIn](https://www.linkedin.com/in/chrismochinski/)_ 
