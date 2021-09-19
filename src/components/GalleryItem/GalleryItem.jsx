@@ -19,7 +19,7 @@ function GalleryItem({ photo, addLike }) {
                 }
 
                 <div className="likeSection">
-                    <img class="likeButton" width="35px" onClick={() => addLike(photo.id)} src="/images/loveButton.png" />
+                    <img className="loveButton" width="35px" onClick={() => addLike(photo.id)} src="/images/loveButton.png" />
                     <span id="likesNumber">{photo.likes}</span>
                 </div>
 

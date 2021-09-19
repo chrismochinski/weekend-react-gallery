@@ -24,10 +24,10 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     [x] > render on DOM
 [x] Show gallery on DOM ()
 
-
-[] paper pattern on polaroids
+[x] polaroid font - make more handwriting-like
+[x] get that dang background pattern!
 [] split description and location into two different properties and render differently (location smaller)
-[] better HEADER
-[] better LOVE FONT
+[x] better HEADER
+[x] better LOVE FONT
 [] delete dopey comments
 [] awesome ReadMe page

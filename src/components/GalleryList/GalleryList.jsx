@@ -28,7 +28,7 @@ function GalleryList({ galleryArray, getGallery }) {
 
     return (
 
-        <ul>
+        <ul className="list">
 
             {galleryArray.map(photo => (
                 <GalleryItem
