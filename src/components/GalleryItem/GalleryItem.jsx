@@ -13,7 +13,7 @@ function GalleryItem({ photo, addLike }) {
                 {
                     isPhotoClicked
                         ?
-                        <div className="description" onClick={() => setIsPhotoClicked(!isPhotoClicked)}><span id="theText">{photo.description}</span></div>
+                        <div className="description" onClick={() => setIsPhotoClicked(!isPhotoClicked)}><span id="theText">{photo.description}<br/><br />{photo.location}</span></div>
                         :
                         <img className="image" width="200px" height="200" onClick={() => setIsPhotoClicked(!isPhotoClicked)} src={photo.path} />
                 }
