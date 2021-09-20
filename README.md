@@ -18,7 +18,8 @@
 
 ### Prerequisites
 ---
-- Internet browser application (e.g. Chrome, Safari)
+- Internet browser application (e.g. Chrome, Safari).
+- _Please note that, while there is a database.sql file, this is NOT fully PostgreSQL-friendly (yet)._
 <br />
 
 ## Installation
