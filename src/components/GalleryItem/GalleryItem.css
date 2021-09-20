@@ -67,6 +67,7 @@ li {
 
 .loveButton {
     opacity: 70%;
+    cursor: pointer;
 }
 
 .loveButton:hover {
