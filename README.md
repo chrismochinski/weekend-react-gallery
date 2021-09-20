@@ -1,4 +1,4 @@
-# <b>Weekend React Gallery  🖼️ <p>
+# <b>Weekend React Gallery  🖼️ </b><p> 
 
 ### <b><span style="color:#F0ED86">This application is a simple - and admittedly self-centered - gallery of photos from my 2019-2020 European tour.</b>
 <br />
