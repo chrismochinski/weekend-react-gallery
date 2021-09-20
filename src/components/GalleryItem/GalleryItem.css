@@ -20,6 +20,7 @@ li {
 .image {
     margin-top: 10px;
     margin-bottom: -5px; 
+    cursor: pointer;
 }
 
 .image:hover {
@@ -43,6 +44,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 #theText {
