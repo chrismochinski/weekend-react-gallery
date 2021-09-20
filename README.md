@@ -12,7 +12,7 @@
 
 ---
 
-![gif during use](./README-visuals/galleryInUse.gif)
+![gif during use](./README-visuals/galleryInUse2.gif)
 ---
 
 
