@@ -25,10 +25,11 @@ function GalleryItem({ photo, addLike }) {
 
 
             </li >
-            
-            </div>)
-        
+
+        </div>)
+
 
 }
 
 export default GalleryItem;
+

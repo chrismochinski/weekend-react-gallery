@@ -29,15 +29,6 @@ function App() {
     })
   } // end GET function (to populate photos on dom - working)
 
-
-
-  //pass in array into the GalleryList (Props)
-  // once in GalleryList, loop through array and pass each individual array, via props into GalleryItem
-
-  //setup your image TAG - source = item 
-
-
-
   return (
 
     <div className="App">

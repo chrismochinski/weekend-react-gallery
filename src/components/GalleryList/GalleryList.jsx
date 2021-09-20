@@ -10,7 +10,7 @@ function GalleryList({ galleryArray, getGallery }) {
     let [isPhotoClicked, setIsPhotoClicked] = useState(false);
 
 
-    //PUT - to add likes
+    //PUT - to add likes ...is this supposed to stay on the app.jsx page?
     const addLike = (galleryID) => {
         console.log('adding Like to photo with galleryID:', galleryID)
         axios({
@@ -24,8 +24,7 @@ function GalleryList({ galleryArray, getGallery }) {
         })
     } // end PUT function to add a like (working)
 
-
-
+    // below - map looping through contents of gallery
     return (
 
         <ul className="list">
@@ -45,4 +44,4 @@ function GalleryList({ galleryArray, getGallery }) {
 
 }
 
-export default GalleryList;
+export default GalleryList; // export to App

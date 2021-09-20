@@ -7,7 +7,9 @@
 
 #### <span style="color: #9ED2F0">_Duration: Two-Day Sprint_</span><br />
 
-This simple app allows a user to click on a polaroid and see a brief description and location associated with the photo. The user can also "like" the photo via the button and see the total number of likes the photo has received.<br />
+<p> This simple app allows a user to click on a polaroid and see a brief description and location associated with the photo. The user can also "like" the photo via the button and see the total number of likes the photo has received.</p>
+
+<br />
 
 ---
 
@@ -26,6 +28,7 @@ This simple app allows a user to click on a polaroid and see a brief description
 - No particular installation steps are required.
 <br />
 <br />
+
 ## Usage
 ---
 
@@ -60,6 +63,6 @@ If you have questions or issues, please do not hesitate to email me at: [cmochin
 <br />
 
 
-##### _[My Twitter (@HolyMosesMusic)](https://twitter.com/holymosesmusic)_ 
-##### _[My GitHub](https://github.com/chrismochinski)_ 
-##### _[My LinkedIn](https://www.linkedin.com/in/chrismochinski/)_ 
+_[My Twitter (@HolyMosesMusic)](https://twitter.com/holymosesmusic)_ <br />
+_[My GitHub](https://github.com/chrismochinski)_ <br />
+_[My LinkedIn](https://www.linkedin.com/in/chrismochinski/)_ 
