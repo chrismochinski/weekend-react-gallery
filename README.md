@@ -57,7 +57,6 @@ If you have questions or issues, please do not hesitate to email me at: [cmochin
 <br />
 
 <img align="left" src="./README-visuals/readme-signature-pic.png" alt="mo" style="width:115px;">
-<br />
 
 
 _[My Twitter (@HolyMosesMusic)](https://twitter.com/holymosesmusic)_ <br />
