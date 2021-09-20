@@ -9,24 +9,21 @@
 
 <p> This simple app allows a user to click on a polaroid and see a brief description and location associated with the photo. The user can also "like" the photo via the button and see the total number of likes the photo has received.</p>
 
-<br />
 
 ---
 
 ![gif during use](./README-visuals/galleryInUse.gif)
 ---
 
-<br />
 
 ### Prerequisites
 ---
 - Internet browser application (e.g. Chrome, Safari)
-<br /> <br />
+<br />
 
 ## Installation
 ---
 - No particular installation steps are required.
-<br />
 <br />
 
 ## Usage
@@ -34,7 +31,7 @@
 
 - At any time, click on a photo to see the description and location
 - At any time, click the <img src="./README-visuals/loveButton.png" alt="mo" style="width:20px;"> icon to add a "like" to the "like count"
-<br /><br />
+<br />
 
 ## Built with
 ---
@@ -50,7 +47,7 @@ N/A
 ## Acknowledgement
 ---
 Thanks to my instructors and everyone at [Prime Digital Academy](www.primeacademy.io) for giving me the tools to do some really rad stuff. 
-<br /><br />
+<br />
 
 ## Support
 ---
