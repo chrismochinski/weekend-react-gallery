@@ -9,8 +9,9 @@ function GalleryItem({ photo, addLike }) {
     if(photo.likes == 0){
         likesDisplay = "No likes yet";
     }
-    else if(photo.likes > 0)
+    else if(photo.likes > 0) {
         likesDisplay = photo.likes;
+    }
 
     return (
 

@@ -21,6 +21,8 @@ li {
     margin-top: 10px;
     margin-bottom: -5px; 
     cursor: pointer;
+    opacity: 100%;
+    transition-duration: .4s;
 }
 
 .image:hover {
