@@ -21,7 +21,6 @@ li {
     margin-top: 10px;
     margin-bottom: -5px; 
     cursor: pointer;
-    opacity: 100%;
     transition-duration: .4s;
 }
 
@@ -68,10 +67,9 @@ li {
 }
 
 .loveButton {
-    opacity: 70%;
     cursor: pointer;
 }
 
 .loveButton:hover {
-    opacity: 100%;
+    opacity: 80%;
 }
